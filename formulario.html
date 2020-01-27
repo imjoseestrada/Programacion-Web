@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<link rel="stylesheet" type="text/css" href="miestilo.css">
+
+<body>
+	<form id="contenedor" action="registrar.php" method="get">
+		<fieldset>
+			<legend>Datos Generales</legend>
+			<label>Nombre: <input type="text" required placeholder="Nombre completo"></label><br><br>
+			<label>Dirección: <input type="text" required></label><br><br>
+			<label>Teléfono: <input type="tel" required></label><br><br>
+			<label>Sexo:</label>
+			<label><input type="radio" value="1" name="sexo">Masculino</label>
+			<label><input type="radio" value="2" name="sexo">Femenino</label><br><br>
+			<label>Fecha de nacimiento: <input type="date"></label>
+		</fieldset><br>
+
+		<fieldset><br>
+			<legend>Lenguajes de Interés</legend>
+			<input type="checkbox">Java
+			<input type="checkbox">C#
+			<input type="checkbox">HTML
+			<input type="checkbox">JavaScript
+		</fieldset><br>
+
+		<fieldset><br>
+			<legend>Frameworks de Interés</legend>
+			<input type="checkbox">Laravel
+			<input type="checkbox">Symfony
+			<input type="checkbox">Bootstrap
+			<input type="checkbox">Phalcon
+		</fieldset><br>
+
+		<fieldset><br>
+			<legend>Comentarios</legend>
+			<textarea type="text" rows="5" cols="20"></textarea>
+		</fieldset><br>
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
